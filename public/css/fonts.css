@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Bernier';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/BERNIERDistressed-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Bernier';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/BERNIERRegular-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Bernier';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/BERNIERShade-Regular.ttf') format("truetype");
+}

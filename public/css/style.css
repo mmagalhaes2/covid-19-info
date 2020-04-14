@@ -1,0 +1,115 @@
+html,
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+.covid-presentation-section {
+    background-color: #fafafa !important;
+    justify-content: center;
+}
+
+.covid-presentation-title {
+    font-family: 'Bernier';
+    font-size: 180px;
+    font-weight: 400;
+    color: #1d1d1f;
+}
+
+.covid-section-main {
+    width: 100%;
+    height: 100vh;
+    background-color: #ff3366;
+    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */ 
+    align-items: center;
+}
+
+.covid-section-title {
+    font-family: 'Bernier';
+    font-size: 64px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 90px;
+    margin-bottom: 42px;
+    margin-top: 0px;
+}
+
+.covid-cards {
+    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */ 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.covid-card {
+    display: flex;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */ 
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 140px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff3366;
+    background-color: #fff;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* .covid-card:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.covid-card:nth-child(n+5) {
+    margin-bottom: 0px;
+} */
+
+@media (max-width: 600px) {
+
+    .covid-presentation-section {
+        height: 100vh !important;
+        display: flex;
+        display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */ 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .covid-presentation-title {
+        font-size: 64px;
+    }
+
+    .covid-section-main {
+        height: 100%;
+    }
+
+    .covid-section-title {
+        font-size: 20px;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+
+    .covid-cards {
+        flex-wrap: wrap;
+    }
+
+    .covid-card {
+        width: 100%;
+        margin: 32px;
+        margin-top: 0px;
+    }
+}
