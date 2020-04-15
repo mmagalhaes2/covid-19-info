@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Firebase Hosting</title>
+  <title>Covid-19 Info</title>
+  <link rel="shortcut icon" href="./assets/virus.svg" type="image/x-icon">
   <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/style.css">
+
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/7.14.0/firebase-app.js"></script>
   <!-- include only the Firebase features as you need -->
@@ -20,8 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 </head>
-
 <body>
+
   <section class="covid-section-main covid-presentation-section">
     <h1 class="covid-presentation-title">Covid-19</h1>
   </section>
@@ -30,7 +31,7 @@
     <div>
       <h1 class="covid-section-title">O que voce precisa saber...</h1>
       <div class="covid-cards">
-        <a href="" class="covid-card">O que e COVID-19</a>
+        <a href="#about-covid-19" class="covid-card">O que e COVID-19</a>
         <a href="" class="covid-card">Quais sao os sintomas</a>
         <a href="" class="covid-card">Como e transmitido</a>
         <a href="" class="covid-card">Diagnostico</a>
@@ -42,6 +43,41 @@
     </div>
 
   </section>
-</body>
 
+  <section class="covid-about-covid">
+    <img class="covid-about-covid-background show-on-scroll" alt="">
+    <div style="max-width: 1200px; z-index: 1060;">
+      <h2 id="about-covid-19" class="covid-about-title">O que é coronavírus?</h2>
+      <p class="covid-about-paragraph">
+        Coronavírus (CID10) é uma família de vírus que causam infecções respiratórias. O novo agente do coronavírus foi
+        descoberto em 31/12/19 após casos registrados na China. Provoca a doença chamada COVID-19. Como nunca tivemos
+        contato com o vírus antes, não temos imunidade.Ela causa uma infecção pulmonar. Nos casos mais leves, porém,
+        parece um resfriado comum ou uma gripe leve.
+      </p>
+
+      <p class="covid-about-paragraph">
+        Os primeiros coronavírus humanos foram isolados pela primeira vez em 1937. No entanto, foi em 1965 que o vírus
+        foi
+        descrito como coronavírus, em decorrência do perfil na microscopia, parecendo uma coroa.
+      </p>
+
+      <p class="covid-about-paragraph">
+        A maioria das pessoas se infecta com os coronavírus comuns ao longo da vida, sendo as crianças pequenas mais
+        propensas a se infectarem com o tipo mais comum do vírus. Os coronavírus mais comuns que infectam humanos são o
+        alpha coronavírus 229E e NL63 e beta coronavírus OC43, HKU1.
+      </p>
+
+      <br>
+
+      <h3 class="covid-about-subtitle">Período de incubação do coronavírus</h3>
+
+      <p class="covid-about-paragraph">
+        Período de incubação é o tempo que leva para os primeiros sintomas aparecerem desde a infecção por coronavírus,
+        que pode ser de 2 a 14 dias.
+      </p>
+    </div>
+  </section>
+
+  <script src="./js/script.js"></script>
+</body>
 </html>
