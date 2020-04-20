@@ -6,21 +6,36 @@ body {
 body {
     display: block;
     margin: 0px;
-}
-
-.covid-presentation-section {
-    background-color: #fafafa !important;
-    justify-content: center;
-}
-
-.covid-presentation-title {
-    font-family: 'Bernier';
-    font-size: 180px;
-    font-weight: 400;
     color: #1d1d1f;
 }
 
-.covid-section-main {
+section {
+    height: 100vh;
+}
+
+.introduction-section {
+    display: flex;
+    background-color: #fafafa !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.covid-introduction-title {
+    font-family: 'Bernier';
+    font-size: 180px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.covid-introduction-subtitle {
+    font-family: 'Work sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.main-section {
     width: 100%;
     height: 100vh;
     background-color: #ff3366;
@@ -34,7 +49,7 @@ body {
     align-items: center;
 }
 
-.covid-section-title {
+.title-main-section {
     font-family: 'Bernier';
     font-size: 64px;
     font-weight: 500;
@@ -44,7 +59,7 @@ body {
     margin-top: 0px;
 }
 
-.covid-cards {
+.covid-main-cards {
     display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -56,7 +71,7 @@ body {
     justify-content: center;
 }
 
-.covid-card {
+.covid-main-card {
     display: flex;
     display: -webkit-box;
     /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -78,47 +93,88 @@ body {
     text-decoration: none;
 }
 
-/* .covid-card:nth-child(4n) {
-    margin-right: 0px;
-}
-
-.covid-card:nth-child(n+5) {
-    margin-bottom: 0px;
-} */
-
-.covid-about-covid {
+.about-section {
     position: relative;
-    display: flex;
     width: 100%;
-    height: 100vh;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.covid-about-covid-background {
+.about-covid-img {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url(../assets/virus.svg) no-repeat left;
-    background-size: 70%;
-    opacity: 0;
-    z-index: 1050;
-    /* transform: translateX(10rem) rotateZ(20deg); */
-    transition: transform 4s .25s cubic-bezier(0, 1, .3, 1), opacity .3s .25s ease-out;
-    will-change: transform, opacity;
+    z-index: 1048;
+    opacity: 0.3;
+    width: 240px;
+}
+
+.covid-1 {
+    top: 12%;
+    left: 6%;
+    animation: pulse 10s infinite;
+}
+
+.covid-2 {
+    top: 50%;
+    left: 30%;
+    animation: pulse 8s infinite;
+}
+
+.covid-3 {
+    top: 15%;
+    right: 10%;
+    animation: pulse 6s infinite;
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(0.5, 0.5, 0.5);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+
+    to {
+        -webkit-transform: scale3d(0.5, 0.5, 0.5);
+        transform: scale3d(0.5, 0.5, 0.5);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(0.5, 0.5, 0.5);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.5, 1.5, 1.5);
+    }
+
+    to {
+        -webkit-transform: scale3d(0.5, 0.5, 0.5);
+        transform: scale3d(0.5, 0.5, 0.5);
+    }
 }
 
 .covid-about-title {
     font-size: 4rem;
     font-weight: 600;
-    color: #1d1d1f;
     margin-bottom: 42px;
+    margin-top: 0px;
 }
 
 .covid-about-subtitle {
     font-size: 2rem;
     font-weight: 500;
-    color: #1d1d1f;
     margin-bottom: 24px;
 }
 
@@ -128,22 +184,15 @@ body {
     text-align: justify;
 }
 
-.is-visible {
-    opacity: 0.3;
-    /* transform: rotateZ(0deg); */
-}
 
-@media (max-width: 600px) {
 
+/* @media (max-width: 600px) {
     .covid-presentation-section {
         height: 100vh !important;
         display: flex;
         display: -webkit-box;
-        /* OLD - iOS 6-, Safari 3.1-6, BB7 */
         display: -ms-flexbox;
-        /* TWEENER - IE 10 */
         display: -webkit-flex;
-        /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
         align-items: center;
         justify-content: center;
     }
@@ -171,4 +220,4 @@ body {
         margin: 32px;
         margin-top: 0px;
     }
-}
+} */
