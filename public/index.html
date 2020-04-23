@@ -32,6 +32,8 @@
     </div>
   </section>
 
+
+  <!-- main -->
   <section class="main-section">
     <div>
       <h1 class="title-main-section">O que você precisa saber...</h1>
@@ -48,25 +50,27 @@
     </div>
   </section>
 
+
+  <!-- about -->
   <section id="about_covid_19" class="about-section">
     <img class="about-covid-img covid-1" src="./assets/virus.svg">
     <img class="about-covid-img covid-2" src="./assets/virus.svg">
     <img class="about-covid-img covid-3" src="./assets/virus.svg">
     <div style="width: 70%; z-index: 1050;">
-      <h2 class="covid-about-title">O que é coronavírus?</h2>
-      <p class="covid-about-paragraph">
+      <h2 class="section-title">O que é coronavírus?</h2>
+      <p class="section-paragraph">
         Coronavírus (CID10) é uma família de vírus que causam infecções respiratórias. O novo agente do coronavírus foi
         descoberto em 31/12/19 após casos registrados na China. Provoca a doença chamada COVID-19. Como nunca tivemos
         contato com o vírus antes, não temos imunidade.Ela causa uma infecção pulmonar. Nos casos mais leves, porém,
         parece um resfriado comum ou uma gripe leve.
       </p>
 
-      <p class="covid-about-paragraph">
+      <p class="section-paragraph">
         Os primeiros coronavírus humanos foram isolados pela primeira vez em 1937. No entanto, foi em 1965 que o vírus
         foi descrito como coronavírus, em decorrência do perfil na microscopia, parecendo uma coroa.
       </p>
 
-      <p class="covid-about-paragraph">
+      <p class="section-paragraph">
         A maioria das pessoas se infecta com os coronavírus comuns ao longo da vida, sendo as crianças pequenas mais
         propensas a se infectarem com o tipo mais comum do vírus. Os coronavírus mais comuns que infectam humanos são o
         alpha coronavírus 229E e NL63 e beta coronavírus OC43, HKU1.
@@ -76,44 +80,129 @@
 
       <h3 class="covid-about-subtitle">Período de incubação do coronavírus</h3>
 
-      <p class="covid-about-paragraph">
+      <p class="section-paragraph">
         Período de incubação é o tempo que leva para os primeiros sintomas aparecerem desde a infecção por coronavírus,
         que pode ser de 2 a 14 dias.
       </p>
     </div>
   </section>
 
+
+  <!-- symptoms -->
   <section id="symptoms" class="symptoms-section">
-    <h2 class="symptoms-title">Quais são os sintomas</h2>
-    <p class="symptoms-paragraph">Os sintomas da COVID-19 podem variar de um simples resfriado até uma pneumonia severa. Sendo os sintomas mais comuns:</p>
+    <div>
+      <h2 class="section-title" style="color: #FFC11E;">Quais são os sintomas</h2>
+      <p class="section-paragraph">
+        Os sintomas da COVID-19 podem variar de um simples resfriado até uma pneumonia severa. Sendo os sintomas mais
+        comuns:
+      </p>
 
-    <ul>
-      <li>Tosse</li>
-      <li>Febre</li>
-      <li>Coriza</li>
-      <li>Dor de garganta</li>
-      <li>Dificuldade para respirar</li>
-    </ul>
+      <ul class="info-list">
+        <li class="info-items">
+          <div class="info-item">
+            <img class="info-item-img" src="./assets/tosse.svg" alt="icone tosse">
+            <span class="info-item-name">Tosse</span>
+            <div class="info-item-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item">
+            <img class="info-item-img" src="./assets/febre.svg" alt="icone febre">
+            <span class="info-item-name">Febre</span>
+            <div class="info-item-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item">
+            <img class="info-item-img" src="./assets/coriza.svg" alt="icone coriza">
+            <span class="info-item-name">Coriza</span>
+            <div class="info-item-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item">
+            <img class="info-item-img" src="./assets/dor-de-garganta.svg" alt="icone dor de garganta">
+            <span class="info-item-name">Dor de garganta</span>
+            <div class="info-item-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item">
+            <img class="info-item-img" src="./assets/dificuldade-para-respirar.svg"
+              alt="icone dificuldade para respirar">
+            <span class="info-item-name">Dificuldade para respirar</span>
+            <div class="info-item-border"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 
-  <section>
-    <h2 id="transmission">Como é transmitido</h2>
-    <p>A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de:</p>
 
-    <ul>
-      <li>Toque do aperto de mão</li>
-      <li>Gotículas de saliva</li>
-      <li>Espirro</li>
-      <li>Tosse</li>
-      <li>Catarro</li>
-      <li>Objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador etc
-      </li>
-    </ul>
+  <!-- transmission -->
+  <section class="transmission-section">
+    <div>
+      <h2 id="transmission" class="section-title transmission-title">Como é transmitido</h2>
+      <p class="section-paragraph">A transmissão acontece de uma pessoa doente para outra ou por contato próximo por
+        meio de:
+      </p>
+
+      <ul class="info-list" style="justify-content: center;">
+        <li class="info-items">
+          <div class="info-item transmission-item">
+            <img class="info-item-img" src="./assets/tosse.svg" alt="icone tosse">
+            <span class="info-item-name">Toque do aperto de mão</span>
+            <div class="info-item-border transmission-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item transmission-item">
+            <img class="info-item-img" src="./assets/febre.svg" alt="icone febre">
+            <span class="info-item-name">Gotículas de saliva</span>
+            <div class="info-item-border transmission-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item transmission-item">
+            <img class="info-item-img" src="./assets/coriza.svg" alt="icone coriza">
+            <span class="info-item-name">Espirro</span>
+            <div class="info-item-border transmission-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item transmission-item">
+            <img class="info-item-img" src="./assets/dor-de-garganta.svg" alt="icone dor de garganta">
+            <span class="info-item-name">Tosse</span>
+            <div class="info-item-border transmission-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item transmission-item">
+            <img class="info-item-img" src="./assets/dificuldade-para-respirar.svg"
+              alt="icone dificuldade para respirar">
+            <span class="info-item-name">Catarro</span>
+            <div class="info-item-border transmission-border"></div>
+          </div>
+        </li>
+        <li class="info-items">
+          <div class="info-item transmission-item" style="max-width: 420px;">
+            <img class="info-item-img" src="./assets/dificuldade-para-respirar.svg"
+              alt="icone dificuldade para respirar">
+            <span class="info-item-name">Objetos ou superfícies contaminadas, como celulares, mesas, maçanetas,
+              brinquedos, teclados de computador etc</span>
+            <div class="info-item-border transmission-border"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 
+
+  <!-- Diagnosis -->
   <section>
     <h2 id="Diagnosis">Diagnóstico</h2>
-    <p>O diagnóstico da COVID-19 é realizado primeiramente pelo profissional de saúde que deve avaliar a presença de
+    <p class="section-paragraph">O diagnóstico da COVID-19 é realizado primeiramente pelo profissional de saúde que deve
+      avaliar a presença de
       critérios clínicos:
     </p>
 
@@ -128,7 +217,7 @@
       </li>
     </ul>
 
-    <p>
+    <p class="section-paragraph">
       Caso o paciente apresente os sintomas, o profissional de saúde poderá solicitar exame laboratoriais:
     </p>
 
@@ -142,16 +231,19 @@
       </li>
     </ul>
 
-    <p>O diagnóstico da COVID-19 também pode ser realizado a partir de critérios como: histórico de contato próximo ou
+    <p class="section-paragraph">O diagnóstico da COVID-19 também pode ser realizado a partir de critérios como:
+      histórico de contato próximo ou
       domiciliar, nos últimos 7 dias antes do aparecimento dos sintomas, com caso confirmado laboratorialmente para
       COVID-19 e para o qual não foi possível realizar a investigação laboratorial específica, também observados pelo
       profissional durante a consulta.
     </p>
   </section>
 
+
+  <!-- protection -->
   <section>
     <h2 id="protection">Como se proteger</h2>
-    <p>As recomendações de prevenção à COVID-19 são as seguintes:</p>
+    <p class="section-paragraph">As recomendações de prevenção à COVID-19 são as seguintes:</p>
 
     <ul>
       <li>Lave com frequência as mãos até a altura dos punhos, com água e sabão, ou então higienize com álcool em gel
@@ -174,11 +266,14 @@
     </ul>
   </section>
 
+
+  <!-- Travaler -->
   <section>
     <h2>Dicas para viajantes</h2>
-    <p>Caso você precise viajar, avalie a real necessidade. Se for inevitável viajar, previna-se e siga as orientações
+    <p class="section-paragraph">Caso você precise viajar, avalie a real necessidade. Se for inevitável viajar,
+      previna-se e siga as orientações
       das autoridades de saúde locais.</p>
-    <p>Ao voltar de viagens internacionais ou locais recomenda-se:</p>
+    <p class="section-paragraph">Ao voltar de viagens internacionais ou locais recomenda-se:</p>
 
     <ul>
       <li><strong>No caso de viagens internacionais:</strong> o isolamento domiciliar voluntário por 7 dias após o
@@ -190,13 +285,16 @@
     </ul>
   </section>
 
+
+  <!-- Sick -->
   <section>
     <h2 id="sick">Se eu ficar doente</h2>
-    <p>Caso você se sinta doente, com sintomas de gripe, evite contato físico com outras pessoas, principalmente idosos
+    <p class="section-paragraph">Caso você se sinta doente, com sintomas de gripe, evite contato físico com outras
+      pessoas, principalmente idosos
       e doentes crônicos e fique em casa por 14 dias.
       Só procure um hospital de referência se estiver com falta de ar.</p>
 
-    <p>
+    <p class="section-paragraph">
       Em caso de diagnóstico positivo para COVID-19, siga as seguintes recomendações:
     </p>
 
@@ -214,7 +312,8 @@
         maçaneta frequentemente com álcool 70% ou água sanitária.</li>
     </ul>
 
-    <p>Caso o paciente não more sozinho, os demais moradores da devem dormir em outro cômodo, longe da pessoa infectada,
+    <p class="section-paragraph">Caso o paciente não more sozinho, os demais moradores da devem dormir em outro cômodo,
+      longe da pessoa infectada,
       seguindo também as seguintes recomendações:</p>
 
     <ul>
@@ -243,7 +342,7 @@
 
   </footer>
 
-  <script src="./js/script.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
 </body>
 
 </html>
